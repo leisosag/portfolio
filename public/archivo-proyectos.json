@@ -1,0 +1,64 @@
+{
+    "archivoProyectos": [
+        {
+            "id": 1,
+            "titulo": "Descubrí música",
+            "descripcion": "Buscador de música. Devuelve un listado de artistas similares, sus albumes más conocidos y biografía.",
+            "tec1": "React Js •",
+            "tec2": " Bootstrap •",
+            "tec3": " LastFM API",
+            "github": "https://github.com/leisosag/find-rock",
+            "web": "https://github.com/leisosag/find-rock"
+        },
+        {
+            "id": 2,
+            "titulo": "Cotizador de criptomonedas",
+            "descripcion": "Busca la cotizacion actualizada de diversas criptomonedas, y su conversion a varias monedas.",
+            "tec1": "JavaScript •",
+            "tec2": " CryptoCompare API",
+            "tec3": " ",
+            "github": "https://github.com/leisosag/cotizador-cripto",
+            "web": "https://github.com/leisosag/cotizador-cripto"
+        },
+        {
+            "id": 3,
+            "titulo": "Administrador de clientes",
+            "descripcion": "CRM con indexedDB.",
+            "tec1": "JavaScript •",
+            "tec2": " Tailwind",
+            "tec3": " ",
+            "github": "https://github.com/leisosag/indexedDB",
+            "web": "https://github.com/leisosag/indexedDB"
+        },
+        {
+            "id": 4,
+            "titulo": "Golosinas con onda",
+            "descripcion": "Una tienda virtual muy simple para el emprendimiento de una amiga. Incluye Mercado Pago.",
+            "tec1": "Bootstrap •",
+            "tec2": " HTML + CSS ",
+            "tec3": " ",
+            "github": "https://github.com/leisosag/golosinas",
+            "web": "https://golosinascononda.netlify.app/"
+        },
+        {
+            "id": 5,
+            "titulo": "Administrador de pacientes",
+            "descripcion": "Amacena datos de pacientes de veterinaria, con un detalle de sus turnos, síntomas, etc.",
+            "tec1": "JavaScript •",
+            "tec2": " Tailwind",
+            "tec3": " ",
+            "github": "https://github.com/leisosag/administrador-citas",
+            "web": "https://github.com/leisosag/administrador-citas"
+        },
+        {
+            "id": 6,
+            "titulo": "App de meditación",
+            "descripcion": "Establece un tiempo para meditar y muestra videos y sonidos relajantes.",
+            "tec1": "JavaScript •",
+            "tec2": " Bootstrap",
+            "tec3": " ",
+            "github": "https://github.com/leisosag/app-meditacion",
+            "web": "https://github.com/leisosag/app-meditacion"
+        }
+    ]
+}

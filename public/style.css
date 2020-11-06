@@ -1,0 +1,189 @@
+:root {
+  --fondo: #121212;
+  --cards: #1d1d1d;
+  --acento: #e91e63;
+  --texto-gris: #828282;
+  --blanco: #fff;
+  --acento-transparencia: hsla(340, 82%, 52%, 0.5);
+}
+nav {
+  font-family: "Fira Code", monospace;
+  min-height: 10vh;
+  position: fixed;
+  background-color: var(--fondo);
+}
+
+body {
+  background-color: var(--fondo);
+  font-family: "Fira Code", monospace;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h5 {
+  color: var(--blanco);
+}
+p,
+.tecnologias span {
+  color: var(--texto-gris);
+  font-weight: 300;
+}
+i {
+  color: var(--acento);
+}
+.navbar-nav span {
+  color: var(--acento);
+}
+.navbar a {
+  color: var(--blanco);
+}
+.navbar-nav .nav-item .nav-link {
+  color: var(--blanco);
+}
+.btn-cv,
+.btn-proyectos {
+  padding: 0.2rem 1.5rem;
+  border: 1px solid var(--acento);
+  color: var(--acento);
+}
+.btn-cv:hover,
+.btn-proyectos:hover {
+  color: var(--blanco);
+  background-color: var(--acento-transparencia);
+}
+.btn-proyectos {
+  padding: 1rem 2rem;
+}
+/***** HEADER *****/
+.contenedor {
+  margin: 0 10vw;
+}
+header,
+#about,
+#proyectos,
+#contacto {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.texto-header,
+.texto-proyecto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+span {
+  color: var(--acento);
+  font-family: "Fira Code", monospace;
+}
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+header h2 {
+  color: var(--texto-gris);
+}
+.imagen-header,
+.imagen-about,
+.imagen-proyecto {
+  display: flex;
+  justify-content: center;
+}
+.imagen-about {
+  position: relative;
+  overflow: hidden;
+}
+.imagen-header img {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+}
+.imagen-about img {
+  width: 60%;
+  height: 100%;
+}
+/***** ABOUT *****/
+#about {
+  min-height: 80vh;
+}
+#about span {
+  font-size: 1.5rem;
+}
+.listado {
+  line-height: 1px;
+}
+/***** PROYECTOS DETALLE *****/
+.contenedor-proyecto {
+  min-height: 60vh;
+}
+.imagen-proyecto img {
+  height: 100%;
+  width: 90%;
+}
+.texto-proyecto-d {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tarjeta {
+  background-color: var(--cards);
+  padding: 1rem;
+}
+.card-body {
+  background-color: var(--cards);
+}
+.links i {
+  font-size: 1.5rem;
+}
+.tecnologias-otros span {
+  color: var(--texto-gris);
+}
+#otros span {
+  font-size: 0.8rem;
+}
+.card-archivo {
+  min-height: 50vh;
+  justify-content: space-around;
+}
+.card {
+  border: none;
+}
+/***** DESKTOP LARGE *****/
+@media only screen and (min-width: 1921px) {
+  header h1 {
+    font-size: 5rem;
+  }
+  header h2,
+  #about h2 {
+    font-size: 5rem;
+  }
+  header p,
+  #about p {
+    font-size: 1.3rem;
+    width: 75%;
+  }
+  #about span {
+    font-size: 3rem;
+  }
+  #proyectos h3 {
+    font-size: 2rem;
+  }
+  #proyectos span {
+    font-size: 1rem;
+  }
+}
+
+/***** MOBILE *****/
+@media only screen and (max-width: 420px) {
+  /***** ABOUT *****/
+  .imagen-about img,
+  .imagen-proyecto img {
+    width: 90%;
+    height: 100%;
+  }
+}

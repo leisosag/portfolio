@@ -1,0 +1,43 @@
+{
+    "proyectos": [
+        {
+            "id": 1,
+            "alineacion": "texto-proyecto-d",
+            "img": "sinergia",
+            "clase": "Website",
+            "titulo": "Sinergia",
+            "descripcion": "Es un proyecto que hice en la facultad de arquitectura para la materia Gestión de Proyectos. Es un espacio de coworking multidiciplinario enfocado a carreras de diseño.",
+            "tec1": "JavaScript",
+            "tec2": "Bootstrap",
+            "tec3": " ",
+            "github": "https://github.com/leisosag/sinergia",
+            "web": "https://sinergia.netlify.app/"
+        },
+        {
+            "id": 2,
+            "alineacion": "texto-proyecto",
+            "img": "cine",
+            "clase": "App",
+            "titulo": "Y ahora qué veo?",
+            "descripcion": "Terminaste una serie o película que te encantó y querés otras del estilo? Con este buscador nunca te vas a quedar sin algo para ver.",
+            "tec1": "React Js",
+            "tec2": "Bootstrap",
+            "tec3": "TheMovieDB API",
+            "github": "https://github.com/leisosag/sinergia",
+            "web": "https://sinergia.netlify.app/"
+        },
+        {
+            "id": 3,
+            "alineacion": "texto-proyecto-d",
+            "img": "pasteleria",
+            "clase": "E-commerce",
+            "titulo": "Compartir pastelería",
+            "descripcion": "Tienda virtual para un emprendimiento de pastelería. Tiene todos sus productos con su descripción y botones de Mercado Pago para poder hacer pedidos.",
+            "tec1": "JavaScript",
+            "tec2": "Bootstrap",
+            "tec3": " ",
+            "github": "https://github.com/leisosag/pasteleria",
+            "web": "https://compartirpasteleria.netlify.app/"
+        }
+    ]
+}
