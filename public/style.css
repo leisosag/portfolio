@@ -42,6 +42,14 @@ i {
 .navbar-nav .nav-item .nav-link {
   color: var(--blanco);
 }
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--acento);
+  transition: 0.3s ease-in;
+}
+i:hover {
+  transition: 0.2s ease-in;
+  transform: translateY(-0.3rem);
+}
 .btn-cv,
 .btn-proyectos {
   padding: 0.2rem 1.5rem;
@@ -52,6 +60,7 @@ i {
 .btn-proyectos:hover {
   color: var(--blanco);
   background-color: var(--acento-transparencia);
+  transition: 0.3s ease-in;
 }
 .btn-proyectos {
   padding: 1rem 2rem;
@@ -118,7 +127,13 @@ header h2 {
 }
 /***** PROYECTOS DETALLE *****/
 .contenedor-proyecto {
-  min-height: 60vh;
+  min-height: 50vh;
+  background-color: var(--cards);
+  margin-top: 5vh;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .imagen-proyecto img {
   height: 100%;
@@ -132,7 +147,6 @@ header h2 {
 }
 .tarjeta {
   background-color: var(--cards);
-  padding: 1rem;
 }
 .card-body {
   background-color: var(--cards);
@@ -150,6 +164,10 @@ header h2 {
   min-height: 50vh;
   justify-content: space-around;
 }
+.card-archivo:hover {
+  transition: 0.2s ease-in;
+  transform: translateY(-0.5rem);
+}
 .card {
   border: none;
 }
@@ -159,7 +177,8 @@ header h2 {
     font-size: 5rem;
   }
   header h2,
-  #about h2 {
+  #about h2,
+  #contacto h2 {
     font-size: 5rem;
   }
   header p,
@@ -170,11 +189,18 @@ header h2 {
   #about span {
     font-size: 3rem;
   }
-  #proyectos h3 {
+  #proyectos h3,
+  #otros h3 {
     font-size: 2rem;
   }
   #proyectos span {
     font-size: 1rem;
+  }
+  .card-archivo {
+    min-height: 28vh;
+  }
+  #contacto {
+    min-height: 50vh;
   }
 }
 
@@ -183,7 +209,13 @@ header h2 {
   /***** ABOUT *****/
   .imagen-about img,
   .imagen-proyecto img {
-    width: 90%;
+    width: 100%;
     height: 100%;
+  }
+  .contenedor-proyecto {
+    padding: 1rem;
+  }
+  .card-archivo {
+    min-height: 65vh;
   }
 }
