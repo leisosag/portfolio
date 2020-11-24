@@ -2,13 +2,13 @@
     "archivoProyectos": [
         {
             "id": 1,
-            "titulo": "Descubrí música",
-            "descripcion": "Buscador de música. Devuelve un listado de artistas similares, sus albumes más conocidos y biografía.",
+            "titulo": "Buscador de imágenes",
+            "descripcion": "Buscador realizado en React.",
             "tec1": "React Js •",
-            "tec2": " Bootstrap •",
-            "tec3": " LastFM API",
-            "github": "https://github.com/leisosag/find-rock",
-            "web": "https://github.com/leisosag/find-rock"
+            "tec2": " Semantic UI •",
+            "tec3": " Unsplash API",
+            "github": "https://github.com/leisosag/pics",
+            "web": "https://awesomepics.netlify.app/"
         },
         {
             "id": 2,
