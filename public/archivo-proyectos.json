@@ -2,6 +2,36 @@
     "archivoProyectos": [
         {
             "id": 1,
+            "titulo": "Find rock",
+            "descripcion": "Buscador de música. Encuentra artistas similares y su biografía.",
+            "tec1": "React Js •",
+            "tec2": " Bootstrap •",
+            "tec3": " LastFM API",
+            "github": "https://github.com/leisosag/find-rock",
+            "web": "https://findrock.netlify.app/"
+        },
+        {
+            "id": 2,
+            "titulo": "Compartir pastelería",
+            "descripcion": "Tienda virtual para un emprendimiento de pastelería.",
+            "tec1": "JavaScript •",
+            "tec2": " Bootstrap",
+            "tec3": " ",
+            "github": "https://github.com/leisosag/pasteleria",
+            "web": "https://compartirpasteleria.netlify.app/"
+        },
+        {
+            "id": 3,
+            "titulo": "Music Player",
+            "descripcion": "Reproductor de música en vanilla JavaScript.",
+            "tec1": "JavaScript •",
+            "tec2": " Bootstrap",
+            "tec3": " ",
+            "github": "https://github.com/leisosag/music-player",
+            "web": "https://nervous-beaver-96fdd2.netlify.app/"
+        },
+        {
+            "id": 4,
             "titulo": "Buscador de imágenes",
             "descripcion": "Buscador realizado en React.",
             "tec1": "React Js •",
@@ -11,7 +41,7 @@
             "web": "https://awesomepics.netlify.app/"
         },
         {
-            "id": 2,
+            "id": 5,
             "titulo": "Cotizador de criptomonedas",
             "descripcion": "Busca la cotizacion actualizada de diversas criptomonedas, y su conversion a varias monedas.",
             "tec1": "JavaScript •",
@@ -21,7 +51,7 @@
             "web": "https://github.com/leisosag/cotizador-cripto"
         },
         {
-            "id": 3,
+            "id": 6,
             "titulo": "Administrador de clientes",
             "descripcion": "CRM con indexedDB.",
             "tec1": "JavaScript •",
@@ -31,7 +61,7 @@
             "web": "https://github.com/leisosag/indexedDB"
         },
         {
-            "id": 4,
+            "id": 7,
             "titulo": "Golosinas con onda",
             "descripcion": "Una tienda virtual muy simple para el emprendimiento de una amiga. Incluye Mercado Pago.",
             "tec1": "Bootstrap •",
@@ -41,7 +71,7 @@
             "web": "https://golosinascononda.netlify.app/"
         },
         {
-            "id": 5,
+            "id": 8,
             "titulo": "Administrador de pacientes",
             "descripcion": "Amacena datos de pacientes de veterinaria, con un detalle de sus turnos, síntomas, etc.",
             "tec1": "JavaScript •",
@@ -51,7 +81,7 @@
             "web": "https://github.com/leisosag/administrador-citas"
         },
         {
-            "id": 6,
+            "id": 9,
             "titulo": "App de meditación",
             "descripcion": "Establece un tiempo para meditar y muestra videos y sonidos relajantes.",
             "tec1": "JavaScript •",
