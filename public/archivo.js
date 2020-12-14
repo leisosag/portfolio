@@ -19,7 +19,7 @@ mostrarArchivo = (listado) => {
     const { titulo, descripcion, tec1, tec2, tec3, github, web } = proyecto;
 
     contenedorArchivo.innerHTML += `
-        <div class="col-lg-4 col-xs-12 pb-3 mt-3">
+        <div class="col-lg-4 col-xs-12 pb-3 mt-3" data-aos="fade-down" data-aos-delay="300">
             <div class="card card-archivo">
                 <div class="card-body d-flex flex-column justify-content-around text-left p-5">
                     <div class="links">

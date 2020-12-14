@@ -22,6 +22,16 @@
         },
         {
             "id": 3,
+            "titulo": "HeartBeat",
+            "descripcion": "Reproductor de música con playlists hecho en vanilla JavaScript.",
+            "tec1": "JavaScript •",
+            "tec2": " Bootstrap",
+            "tec3": " ",
+            "github": "https://github.com/leisosag/HeartBeat",
+            "web": "https://heartbeat2.netlify.app/"
+        },
+        {
+            "id": 4,
             "titulo": "Music Player",
             "descripcion": "Reproductor de música en vanilla JavaScript.",
             "tec1": "JavaScript •",
@@ -31,7 +41,7 @@
             "web": "https://nervous-beaver-96fdd2.netlify.app/"
         },
         {
-            "id": 4,
+            "id": 5,
             "titulo": "Buscador de imágenes",
             "descripcion": "Buscador realizado en React.",
             "tec1": "React Js •",
@@ -39,16 +49,6 @@
             "tec3": " Unsplash API",
             "github": "https://github.com/leisosag/pics",
             "web": "https://awesomepics.netlify.app/"
-        },
-        {
-            "id": 5,
-            "titulo": "Cotizador de criptomonedas",
-            "descripcion": "Busca la cotizacion actualizada de diversas criptomonedas, y su conversion a varias monedas.",
-            "tec1": "JavaScript •",
-            "tec2": " CryptoCompare API",
-            "tec3": " ",
-            "github": "https://github.com/leisosag/cotizador-cripto",
-            "web": "https://github.com/leisosag/cotizador-cripto"
         },
         {
             "id": 6,
