@@ -1,226 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Sans+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/675e0bba25.js" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Sans+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/675e0bba25.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Portfolio | Leila Sosa Gonzalez</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <!-- NAVBAR -->
     <div id="navbar">
-        <div class="contenedor">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark pl-5 pr-5">
-                <a class="navbar-brand" href="#">LSG</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item" data-aos="fade-down">
-                      <a class="nav-link mr-3" href="#about"><span>01.</span> About</a>
-                    </li>
-                    <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
-                      <a class="nav-link mr-3" href="#proyectos"><span>02.</span> Proyectos</a>
-                    </li>
-                    <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
-                      <a class="nav-link mr-3" href="#contacto"><span>02.</span> Contacto</a>
-                    </li>
-                  </ul>
-                  <form method="get" action="CV-LEILA-SOSA-GONZALEZ.pdf">
-                    <button class="btn btn-cv my-2 my-sm-0" type="submit" data-aos="fade-down" data-aos-delay="400">CV</button>
-                 </form>
-                </div>
-              </nav>
-        </div>
+      <div class="contenedor">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pl-5 pr-5">
+          <a class="navbar-brand" href="#">LSG</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item" data-aos="fade-down">
+                <a class="nav-link mr-3" href="#about"
+                  ><span>01.</span> About</a
+                >
+              </li>
+              <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
+                <a class="nav-link mr-3" href="#proyectos"
+                  ><span>02.</span> Proyectos</a
+                >
+              </li>
+              <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
+                <a class="nav-link mr-3" href="#contacto"
+                  ><span>02.</span> Contacto</a
+                >
+              </li>
+            </ul>
+            <form method="get" action="CV-LEILA-SOSA-GONZALEZ.pdf">
+              <button
+                class="btn btn-cv my-2 my-sm-0"
+                type="submit"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              >
+                CV
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
     </div>
     <!-- HEADER -->
     <header class="pt-5 pb-5">
-        <div class="contenedor pt-5">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 pb-5 texto-header">
-                    <span data-aos="fade-up" data-aos-delay="700">Hola, soy</span>
-                    <h1 class="mt-4" data-aos="fade-up" data-aos-delay="800">Leila Sosa González</h1>
-                    <h2 class="" data-aos="fade-up" data-aos-delay="900">Desarrolladora Frontend</h2>
-                    <a href="#proyectos" data-aos="fade-up" data-aos-delay="1100"><button class="btn btn-proyectos my-2 my-sm-0">Ver proyectos</button></a>
-                </div>
-                <div class="col-sm-12 col-md-6 pb-5 imagen-header" data-aos="fade-up" data-aos-delay="700">
-                    <img src="./img/header.svg" alt="portada">
-                </div>
-            </div>
+      <div class="contenedor pt-5">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 pb-5 texto-header">
+            <span data-aos="fade-up" data-aos-delay="700">Hola, soy</span>
+            <h1 class="mt-4" data-aos="fade-up" data-aos-delay="800">
+              Leila Sosa González
+            </h1>
+            <h2 class="" data-aos="fade-up" data-aos-delay="900">
+              Desarrolladora Frontend
+            </h2>
+            <a href="#proyectos" data-aos="fade-up" data-aos-delay="1100"
+              ><button class="btn btn-proyectos my-2 my-sm-0">
+                Ver proyectos
+              </button></a
+            >
+          </div>
+          <div
+            class="col-sm-12 col-md-6 pb-5 imagen-header"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <img src="./img/header.svg" alt="portada" />
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <!-- ABOUT-->
-        <section id="about">
-            <div class="contenedor">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 texto-header">
-                        <h2 class="mt-4"><span>01.</span> About</h2>
-                        <p class="mt-4">Hola! Soy Leila Sosa González, desarrolladora frontend y UX designer.</p>
-                        <p class="">Estoy cursando el ingreso a ingeniería en informática en la UNLaM, estudio programación de manera autodiacta y me encanta aprender cosas nuevas.</p>
-                        <p class="mb-4">Soy arquitecta egresada de la UBA y utilizo mi experiencia en diseño y conocimiento de usuarios para mejorar mis producciones.</p>
-                        <p class="">Tecnologías:</p>
-                        <div class="row pb-5">
-                            <div class="col-md-4">
-                                <p class="listado"><i class="fas fa-caret-right pr-2"></i>Javascript</p>
-                                <p class="listado"><i class="fas fa-caret-right pr-2"></i>React Js</p>
-                                <p class="listado"><i class="fas fa-caret-right pr-2"></i>Bootstrap</p>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="listado"><i class="fas fa-caret-right pr-2"></i>HTML</p>
-                                <p class="listado"><i class="fas fa-caret-right pr-2"></i>CSS</p>
-                                <p class="listado"><i class="fas fa-caret-right pr-2"></i>Semantic UI</p>
-                                
-                            </div>
-                            <div class="col-md-4">
-                                <p class="listado"><i class="fas fa-caret-right pr-2"></i>GIT</p>
-                                <p class="listado"><i class="fas fa-caret-right pr-2"></i>Figma</p>
-                                <p class="listado"><i class="fas fa-caret-right pr-2"></i>Adobe XD</p>
-                            </div>
-                        </div>
-                    </div>
+      <!-- ABOUT-->
+      <section id="about">
+        <div class="contenedor">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 texto-header">
+              <h2 class="mt-4"><span>01.</span> About</h2>
+              <p class="mt-4">
+                Hola! Soy Leila Sosa González, desarrolladora frontend y UX
+                designer.
+              </p>
+              <p class="">
+                Estoy cursando el ingreso a ingeniería en informática en la
+                UNLaM, estudio programación de manera autodiacta y me encanta
+                aprender cosas nuevas.
+              </p>
+              <p class="mb-4">
+                Soy arquitecta egresada de la UBA y utilizo mi experiencia en
+                diseño y conocimiento de usuarios para mejorar mis producciones.
+              </p>
+              <p class="">Tecnologías:</p>
+              <div class="row pb-5">
+                <div class="col-md-4">
+                  <p class="listado">
+                    <i class="fas fa-caret-right pr-2"></i>Javascript
+                  </p>
+                  <p class="listado">
+                    <i class="fas fa-caret-right pr-2"></i>React Js
+                  </p>
+                  <p class="listado">
+                    <i class="fas fa-caret-right pr-2"></i>Bootstrap
+                  </p>
                 </div>
+                <div class="col-md-4">
+                  <p class="listado">
+                    <i class="fas fa-caret-right pr-2"></i>HTML
+                  </p>
+                  <p class="listado">
+                    <i class="fas fa-caret-right pr-2"></i>CSS
+                  </p>
+                  <p class="listado">
+                    <i class="fas fa-caret-right pr-2"></i>Semantic UI
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <p class="listado">
+                    <i class="fas fa-caret-right pr-2"></i>GIT
+                  </p>
+                  <p class="listado">
+                    <i class="fas fa-caret-right pr-2"></i>Figma
+                  </p>
+                  <p class="listado">
+                    <i class="fas fa-caret-right pr-2"></i>Adobe XD
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
-        <!-- PROYECTOS-->
-        <section id="proyectos">
-            
-            <div class="contenedor pt-5 pb-5"  id="proyectos-contenedor">
-                <h2 class="mt-5"><span>02.</span> Proyectos</h2>
-                <!-- proyecto impar -->
-                <div class="contenedor-proyecto" data-aos="fade-right">
-                <div class="row">
-                    <div class="col-sm-12 col-md-8 imagen-proyecto mt-2">
-                        <img src="./img/sinergia.png" alt="portada proyecto">
-                    </div>
-                    <div class="col-sm-12 col-md-4 texto-proyecto-d mt-2">
-                        <span>Website</span>
-                        <h3 class="mt-3 mb-3">Sinergia</h3>
-                        <div class="tarjeta mb-3">
-                            <p>Es un proyecto que hice en la facultad de arquitectura para la materia Gestión de Proyectos. Es un espacio de coworking multidiciplinario enfocado a carreras de diseño.</p>
-                        </div>
-                        <div class="tecnologias">
-                            <span>JavaScript •</span>
-                            <span> Bootstrap</span>
-                        </div>
-                        <div class="links mt-3">
-                            <a href="https://github.com/leisosag/sinergia"><i class="fab fa-github mr-3"></i></a>
-                        <a href="https://sinergia.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROYECTOS-->
+      <section id="proyectos">
+        <div class="contenedor pt-5 pb-5" id="proyectos-contenedor">
+          <h2 class="mt-5"><span>02.</span> Proyectos</h2>
+          <!-- proyecto impar -->
+          <div class="contenedor-proyecto" data-aos="fade-right">
+            <div class="row">
+              <div class="col-sm-12 col-md-8 imagen-proyecto mt-2">
+                <img src="./img/sinergia.png" alt="portada proyecto" />
+              </div>
+              <div class="col-sm-12 col-md-4 texto-proyecto-d mt-2">
+                <span>Website</span>
+                <h3 class="mt-3 mb-3">Sinergia</h3>
+                <div class="tarjeta mb-3">
+                  <p>
+                    Es un proyecto que hice en la facultad de arquitectura para
+                    la materia Gestión de Proyectos. Es un espacio de coworking
+                    multidiciplinario enfocado a carreras de diseño.
+                  </p>
                 </div>
+                <div class="tecnologias">
+                  <span>HTML+CSS •</span>
+                  <span> Javascript •</span>
+                  <span> Bootstrap</span>
+                </div>
+                <div class="links mt-3">
+                  <a href="https://github.com/leisosag/sinergia"
+                    ><i class="fab fa-github mr-3"></i
+                  ></a>
+                  <a href="https://sinergia.netlify.app/"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
             </div>
-            <!-- proyecto par -->
-            <div class="contenedor-proyecto" data-aos="fade-left">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4 texto-proyecto mt-2">
-                        <span>App</span>
-                        <h3 class="mt-3 mb-3">Pokedex</h3>
-                        <div class="tarjeta mb-3">
-                            <p>Buscador de pokemons con React Hooks</p>
-                        </div>
-                        <div class="tecnologias">
-                            <span>React Js •</span>
-                            <span> Bootstrap •</span>
-                            <span> API pokeapi</span>
-                        </div>
-                        <div class="links mt-3">
-                            <a href="https://github.com/leisosag/pokedex"><i class="fab fa-github mr-3"></i></a>
-                        <a href="https://pokedexbylei.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-8 imagen-proyecto mt-2">
-                        <img src="./img/pokedex.png" alt="portada proyecto">
-                    </div>
+          </div>
+          <!-- proyecto par -->
+          <div class="contenedor-proyecto" data-aos="fade-left">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 texto-proyecto mt-2">
+                <span>App</span>
+                <h3 class="mt-3 mb-3">Pokedex</h3>
+                <div class="tarjeta mb-3">
+                  <p>Buscador de pokemons con React Hooks</p>
                 </div>
-            </div> 
-                <!-- proyecto impar -->
-                <div class="contenedor-proyecto" data-aos="fade-right">
-                <div class="row">
-                    <div class="col-sm-12 col-md-8 imagen-proyecto mt-2">
-                        <img src="./img/babytube.png" alt="portada proyecto">
-                    </div>
-                    <div class="col-sm-12 col-md-4 texto-proyecto-d mt-2">
-                        <span>App</span>
-                        <h3 class="mt-3 mb-3">BabyTube</h3>
-                        <div class="tarjeta mb-3">
-                            <p>Buscador de videos con la API de YouTube</p>
-                        </div>
-                        <div class="tecnologias">
-                                <span>React Js •</span>
-                                <span> Semantic UI •</span>
-                                <span> YouTube API</span>
-                        </div>
-                        <div class="links mt-3">
-                            <a href="https://github.com/leisosag/baby-tube"><i class="fab fa-github mr-3"></i></a>
-                            <a href="https://babytube.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
+                <div class="tecnologias">
+                  <span>React Js •</span>
+                  <span> Bootstrap •</span>
+                  <span> API pokeapi</span>
                 </div>
+                <div class="links mt-3">
+                  <a href="https://github.com/leisosag/pokedex"
+                    ><i class="fab fa-github mr-3"></i
+                  ></a>
+                  <a href="https://pokedexbylei.netlify.app/"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
                 </div>
-                <!-- proyecto par -->
-            <div class="contenedor-proyecto" data-aos="fade-left">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4 texto-proyecto mt-2">
-                        <span>Website</span>
-                        <h3 class="mt-3 mb-3">Bityuya</h3>
-                        <div class="tarjeta mb-3">
-                            <p>Cotizador de criptomonedas (en desarrollo) </p>
-                        </div>
-                        <div class="tecnologias">
-                            <span>React Js •</span>
-                            <span> Bootstrap •</span>
-                            <span> CryptoCompare API</span>
-                        </div>
-                        <div class="links mt-3">
-                            <a href="https://github.com/leisosag/bityuya"><i class="fab fa-github mr-3"></i></a>
-                        <a href="https://bityuya.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-8 imagen-proyecto mt-2">
-                        <img src="./img/bityuya.png" alt="portada proyecto">
-                    </div>
-                </div>
-            </div> 
+              </div>
+              <div class="col-sm-12 col-md-8 imagen-proyecto mt-2">
+                <img src="./img/pokedex.png" alt="portada proyecto" />
+              </div>
             </div>
-        </section>
-        <!-- OTROS PROYECTOS-->
-        <section>
-            <div class="contenedor pt-5 pb-5">
-                <h3 class="mt-5 text-center">Otros proyectos</h3>
-                    <div class="row mt-5" id="otros"></div>
-            </div>
-        </section>
-        <!-- OTROS PROYECTOS-->
-        <section id="contacto">
-            <div class="contenedor d-flex justify-content-center align-items-center flex-column">
-                <h2 class="mt-4 mb-5 text-center"><span>03.</span> Contacto</h2>
-                <p>Hablemos!</p>
-                <div class="links mt-5">
-                    <a href="https://github.com/leisosag/" target="_blank"><i class="fab fa-github mr-3"></i></a>
-                    <a href="https://www.linkedin.com/in/leila-sosa-gonzalez/" target="_blank"><i class="fab fa-linkedin-in mr-3"></i></a>
-                    <a href="mailto:leilasosag@gmail.com"><i class="far fa-envelope mr-3"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=+54 9 11 2405-6023" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <!-- proyecto impar -->
+          <div class="contenedor-proyecto" data-aos="fade-right">
+            <div class="row">
+              <div class="col-sm-12 col-md-8 imagen-proyecto mt-2">
+                <img src="./img/trip.png" alt="portada proyecto" />
+              </div>
+              <div class="col-sm-12 col-md-4 texto-proyecto-d mt-2">
+                <span>Website</span>
+                <h3 class="mt-3 mb-3">Trip viajes</h3>
+                <div class="tarjeta mb-3">
+                  <p>Agencia de viajes, primer proyecto con Node.js</p>
                 </div>
+                <div class="tecnologias">
+                  <span>Node Js •</span>
+                  <span> Express •</span>
+                  <span> Bootstrap</span>
+                </div>
+                <div class="links mt-3">
+                  <a href="https://github.com/leisosag/agencia-de-viajes"
+                    ><i class="fab fa-github mr-3"></i
+                  ></a>
+                  <a href="https://trip-viajes.herokuapp.com/"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+          <!-- proyecto par -->
+          <div class="contenedor-proyecto" data-aos="fade-left">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 texto-proyecto mt-2">
+                <span>Website</span>
+                <h3 class="mt-3 mb-3">Bityuya</h3>
+                <div class="tarjeta mb-3">
+                  <p>Cotizador de criptomonedas (en desarrollo)</p>
+                </div>
+                <div class="tecnologias">
+                  <span>React Js •</span>
+                  <span> Bootstrap •</span>
+                  <span> CryptoCompare API</span>
+                </div>
+                <div class="links mt-3">
+                  <a href="https://github.com/leisosag/bityuya"
+                    ><i class="fab fa-github mr-3"></i
+                  ></a>
+                  <a href="https://bityuya.netlify.app/"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-8 imagen-proyecto mt-2">
+                <img src="./img/bityuya.png" alt="portada proyecto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- OTROS PROYECTOS-->
+      <section>
+        <div class="contenedor pt-5 pb-5">
+          <h3 class="mt-5 text-center">Otros proyectos</h3>
+          <div class="row mt-5" id="otros"></div>
+        </div>
+      </section>
+      <!-- OTROS PROYECTOS-->
+      <section id="contacto">
+        <div
+          class="contenedor d-flex justify-content-center align-items-center flex-column"
+        >
+          <h2 class="mt-4 mb-5 text-center"><span>03.</span> Contacto</h2>
+          <p>Hablemos!</p>
+          <div class="links mt-5">
+            <a href="https://github.com/leisosag/" target="_blank"
+              ><i class="fab fa-github mr-3"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/leila-sosa-gonzalez/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in mr-3"></i
+            ></a>
+            <a href="mailto:leilasosag@gmail.com"
+              ><i class="far fa-envelope mr-3"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+54 9 11 2405-6023"
+              target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </section>
     </main>
-    
+
     <script src="archivo.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        AOS.init();
-      </script>
-</body>
+      AOS.init();
+    </script>
+  </body>
 </html>
