@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} bg-gray-950 leading-relaxed text-gray-400 antialiased selection:bg-rose-300 selection:text-fuchsia-900`}
+        className={`${nunito.variable} bg-[#121012] leading-relaxed text-gray-400 antialiased selection:bg-rose-300 selection:text-fuchsia-900`}
       >
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
           <div className="lg:flex flex-col lg:justify-between">

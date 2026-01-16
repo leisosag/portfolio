@@ -18,7 +18,7 @@ const ICONS = [
     href: 'https://www.linkedin.com/in/leila-sosa-gonzalez/',
     icon: faLinkedin,
   },
-  { href: 'mailto:leila@example.com', icon: faEnvelope },
+  { href: 'mailto:leilasosag@gmail.com', icon: faEnvelope },
 ];
 
 type NavProps = { isDesktop?: boolean };
@@ -47,7 +47,7 @@ export const Navbar = () => {
     <nav
       className={
         isDesktop
-          ? 'hidden lg:flex items-center justify-between pt-8 bg-slate-950/90 backdrop-blur'
+          ? 'hidden lg:flex items-center justify-between pt-8 bg-[#121012]/90 backdrop-blur'
           : ''
       }
     >
@@ -94,7 +94,7 @@ export const Navbar = () => {
   return (
     <>
       {/* Header */}
-      <header className="fixed inset-x-0 top-0 z-40 bg-slate-950/90 backdrop-blur flex items-center justify-between px-6 py-4 lg:hidden">
+      <header className="fixed inset-x-0 top-0 z-40 bg-[#121012] backdrop-blur flex items-center justify-between px-6 py-4 lg:hidden">
         <span className="text-sm font-bold tracking-wide text-slate-200">
           LSG
         </span>
@@ -109,7 +109,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="fixed top-[58px] right-0 z-30 bg-slate-950 px-6 py-6 w-full h-full backdrop-blur lg:hidden">
+        <div className="fixed top-[58px] right-0 z-30 bg-[#121012] px-6 py-6 w-full h-full backdrop-blur lg:hidden">
           <Nav />
         </div>
       )}

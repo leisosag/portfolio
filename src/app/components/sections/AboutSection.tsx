@@ -10,8 +10,11 @@ const AboutSection = (): React.JSX.Element => {
         </h1>
 
         <p className="mt-4 leading-normal">
-          I'm a frontend developer with 5+ years of experience, focused on //
-          building clean, structured, and maintainable interfaces.
+          I'm a frontend developer with 5+ years of experience,
+        </p>
+
+        <p className="mt-1 leading-normal">
+          focused on building clean, structured, and maintainable interfaces.
         </p>
 
         <p className="mt-4 leading-normal">
