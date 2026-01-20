@@ -4,7 +4,7 @@ import './globals.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
-import { Navbar } from '@/components/ui/Navbar';
+import { ClientNavbar } from '@/components/ui/ClientNavbar';
 
 const nunito = Nunito({
   subsets: ['latin'],
@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={`${nunito.variable} bg-bg-main leading-relaxed text-gray-400 antialiased selection:bg-purple-300 selection:text-purple-900`}
       >
-        <Navbar />
+        <ClientNavbar />
         <main className="mx-auto min-h-screen max-w-screen-xl px-6 pt-24 md:px-12 lg:pt-32">
           {children}
         </main>
