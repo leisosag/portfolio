@@ -1,26 +1,24 @@
 'use client';
 import * as React from 'react';
-import { NavItem } from './NavItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { SECTIONS } from '@/constants/navigation';
 
-const ICONS = [
-  { href: 'https://github.com/leisosag', icon: faGithub },
+const SOCIAL_LINKS = [
+  { href: 'https://github.com/leisosag', icon: faGithub, label: 'GitHub' },
   {
     href: 'https://www.linkedin.com/in/leila-sosa-gonzalez/',
     icon: faLinkedin,
+    label: 'LinkedIn',
   },
-  { href: 'mailto:leilasosag@gmail.com', icon: faEnvelope },
+  { href: 'mailto:leilasosag@gmail.com', icon: faEnvelope, label: 'Email' },
 ];
-
-type NavProps = { isDesktop?: boolean };
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = React.useState('about');
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   React.useEffect(() => {
     const sections = document.querySelectorAll('section[id]');
@@ -38,83 +36,123 @@ export const Navbar = () => {
     return () => observer.disconnect();
   }, []);
 
-  const Nav: React.FC<NavProps> = ({ isDesktop = false }) => (
-    <nav
-      className={
-        isDesktop
-          ? 'hidden lg:flex items-center justify-between pt-8 bg-bg-main backdrop-blur'
-          : ''
-      }
-    >
-      {isDesktop && (
-        <h1 className="text-lg font-bold tracking-wide text-slate-200 mb-5">
-          LSG
-        </h1>
-      )}
-      <ul
-        className={
-          isDesktop
-            ? 'flex gap-10 uppercase tracking-widest text-slate-400'
-            : 'pb-3 uppercase tracking-widest text-slate-300'
-        }
-      >
-        {SECTIONS.map((s) => (
-          <NavItem
-            key={s.href}
-            href={s.href}
-            label={s.label}
-            active={activeSection === s.href.replace('#', '')}
-            onClick={() => setIsOpen(false)}
-          />
-        ))}
-      </ul>
-      <ul
-        className={
-          isDesktop
-            ? 'flex items-center text-xs text-slate-400 gap-2'
-            : 'flex flex-col border-t-1 pt-8 flex text-xs text-slate-400 pl-[10px]'
-        }
-      >
-        {ICONS.map((i, idx) => (
-          <li key={idx} className="mb-5">
-            <a
-              href={i.href}
-              target="_blank"
-              className="hover:text-accent-primary"
-            >
-              <FontAwesomeIcon size={isDesktop ? '2x' : 'lg'} icon={i.icon} />
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
+  const handleNavClick = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <>
-      {/* Header */}
-      <header className="fixed inset-x-0 top-0 z-40 bg-bg-main backdrop-blur flex items-center justify-between px-6 py-4 lg:hidden">
-        <span className="text-sm font-bold tracking-wide text-slate-200">
-          LSG
-        </span>
-        <button
-          onClick={() => setIsOpen((prev) => !prev)}
-          aria-label="Toggle menu"
-          className="text-slate-200 z-50"
-        >
-          <FontAwesomeIcon icon={isOpen ? faXmark : faBars} />
-        </button>
-      </header>
+      {/* Navbar Glass Effect - Desktop & Mobile */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-bg-main/80 backdrop-blur-md border-b border-slate-800/50">
+        <div className="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
+          {/* Logo */}
+          <h1 className="text-lg font-bold tracking-wide text-text-secondary">
+            LSG
+          </h1>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="fixed top-[58px] right-0 z-30 bg-[#121012] px-6 py-6 w-full h-full backdrop-blur lg:hidden">
-          <Nav />
+          {/* Desktop Navigation */}
+          <ul className="hidden lg:flex items-center gap-8">
+            {SECTIONS.map((section) => (
+              <li key={section.href}>
+                <a
+                  href={section.href}
+                  className={`flex items-center gap-2 text-sm uppercase font-semibold tracking-widest transition-colors hover:text-accent-primary ${
+                    activeSection === section.href.replace('#', '')
+                      ? 'text-accent-primary'
+                      : 'text-text-secondary'
+                  }`}
+                >
+                  <span
+                    className={`h-1 w-1 rounded-full transition-all ${
+                      activeSection === section.href.replace('#', '')
+                        ? 'w-8 bg-accent-primary'
+                        : 'bg-text-secondary'
+                    }`}
+                  />
+                  {section.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          {/* Desktop Social Icons */}
+          <ul className="hidden lg:flex items-center gap-4">
+            {SOCIAL_LINKS.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.label}
+                  className="text-text-secondary hover:text-accent-primary transition-colors"
+                >
+                  <FontAwesomeIcon icon={link.icon} size="lg" />
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+            className="lg:hidden text-text-secondary text-xl"
+          >
+            <FontAwesomeIcon icon={isMenuOpen ? faXmark : faBars} />
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-40 lg:hidden">
+          <div className="absolute inset-0 bg-bg-main/95 backdrop-blur-2xl pt-20 px-6">
+            {/* Mobile Navigation */}
+            <ul className="space-y-6 mb-12">
+              {SECTIONS.map((section) => (
+                <li key={section.href}>
+                  <a
+                    href={section.href}
+                    onClick={handleNavClick}
+                    className={`flex items-center gap-3 text-sm font-semibold tracking-widest transition-colors ${
+                      activeSection === section.href.replace('#', '')
+                        ? 'text-accent-primary'
+                        : 'text-text-secondary'
+                    }`}
+                  >
+                    <span
+                      className={`h-1 w-1 rounded-full transition-all ${
+                        activeSection === section.href.replace('#', '')
+                          ? 'w-8 bg-accent-primary'
+                          : 'bg-text-secondary'
+                      }`}
+                    />
+                    {section.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            {/* Mobile Social Icons */}
+            <div className="border-t border-slate-800 pt-8">
+              <ul className="space-y-6">
+                {SOCIAL_LINKS.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-text-secondary hover:text-accent-primary transition-colors"
+                    >
+                      <FontAwesomeIcon icon={link.icon} className="w-5" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       )}
-
-      {/* Desktop Navbar */}
-      <Nav isDesktop />
     </>
   );
 };

@@ -52,8 +52,3 @@ body {
   background-color: rgb(var(--background));
   color: rgb(var(--foreground));
 }
-
-/* primary accent: purple-600 */
-/* hover: purple-500 */
-/* active: purple-700 */
-/* badge: purple-900/50 */
