@@ -5,12 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-
-const SECTIONS = [
-  { href: '#about', label: 'About' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#projects', label: 'Projects' },
-];
+import { SECTIONS } from '@/constants/navigation';
 
 const ICONS = [
   { href: 'https://github.com/leisosag', icon: faGithub },
@@ -47,7 +42,7 @@ export const Navbar = () => {
     <nav
       className={
         isDesktop
-          ? 'hidden lg:flex items-center justify-between pt-8 bg-[#121012]/90 backdrop-blur'
+          ? 'hidden lg:flex items-center justify-between pt-8 bg-bg-main backdrop-blur border'
           : ''
       }
     >
@@ -82,7 +77,11 @@ export const Navbar = () => {
       >
         {ICONS.map((i, idx) => (
           <li key={idx} className="mb-5">
-            <a href={i.href} target="_blank" className="hover:text-burgundy">
+            <a
+              href={i.href}
+              target="_blank"
+              className="hover:text-primary-active"
+            >
               <FontAwesomeIcon size={isDesktop ? '2x' : 'lg'} icon={i.icon} />
             </a>
           </li>
@@ -94,7 +93,7 @@ export const Navbar = () => {
   return (
     <>
       {/* Header */}
-      <header className="fixed inset-x-0 top-0 z-40 bg-[#121012] backdrop-blur flex items-center justify-between px-6 py-4 lg:hidden">
+      <header className="fixed inset-x-0 top-0 z-40 bg-bg-main backdrop-blur flex items-center justify-between px-6 py-4 lg:hidden">
         <span className="text-sm font-bold tracking-wide text-slate-200">
           LSG
         </span>

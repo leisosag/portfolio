@@ -21,8 +21,8 @@ export default function Home() {
       { threshold: 0.6 }
     );
 
-    SECTIONS.forEach((id) => {
-      const section = document.getElementById(id);
+    SECTIONS.forEach((s) => {
+      const section = document.getElementById(s.label.toLowerCase());
       if (section) observer.observe(section);
     });
 
