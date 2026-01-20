@@ -18,6 +18,7 @@ export default function Home() {
           }
         });
       },
+
       { threshold: 0.6 }
     );
 
