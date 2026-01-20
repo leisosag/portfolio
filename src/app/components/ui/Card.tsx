@@ -13,6 +13,7 @@ interface CardProps {
   time?: string;
   items: string[];
   image?: CardImage;
+  href: string;
 }
 
 const Card = ({
@@ -21,6 +22,7 @@ const Card = ({
   time,
   items,
   image,
+  href,
 }: CardProps): React.JSX.Element => {
   return (
     <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
@@ -35,7 +37,8 @@ const Card = ({
           <div>
             <a
               className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-accent-primary focus-visible:text-accent-hover group/link text-base"
-              href="https://tailwindcss.com/docs/colors"
+              href={href}
+              target="_blank"
             >
               <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
               <span>{title}</span>

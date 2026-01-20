@@ -42,7 +42,7 @@ export const Navbar = () => {
     <nav
       className={
         isDesktop
-          ? 'hidden lg:flex items-center justify-between pt-8 bg-bg-main backdrop-blur border'
+          ? 'hidden lg:flex items-center justify-between pt-8 bg-bg-main backdrop-blur'
           : ''
       }
     >
@@ -80,7 +80,7 @@ export const Navbar = () => {
             <a
               href={i.href}
               target="_blank"
-              className="hover:text-primary-active"
+              className="hover:text-accent-primary"
             >
               <FontAwesomeIcon size={isDesktop ? '2x' : 'lg'} icon={i.icon} />
             </a>

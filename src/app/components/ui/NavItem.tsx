@@ -20,8 +20,8 @@ export const NavItem = ({
           active ? 'active' : ''
         }`}
       >
-        <span className="mt-px h-1 w-1 rounded-full bg-primary-active opacity-0 transition-opacity group-[.active]:opacity-90" />
-        <span className="text-sm font-bold transition-colors text-slate-500 group-hover:text-primary-active group-[.active]:text-primary-active">
+        <span className="mt-px h-1 w-1 rounded-full bg-accent-primary opacity-0 transition-opacity group-[.active]:opacity-90" />
+        <span className="text-sm font-bold transition-colors text-slate-500 group-hover:text-accent-primary group-[.active]:text-accent-primary">
           {label}
         </span>
       </a>

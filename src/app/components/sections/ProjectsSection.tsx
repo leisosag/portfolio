@@ -10,12 +10,14 @@ const ProjectsSection = (): React.JSX.Element => {
         'Espacio de coworking multidiciplinario enfocado a carreras de diseño.',
       items: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
       image: { src: '/images/sinergia.png', alt: 'Sinergia' },
+      href: 'https://sinergia.netlify.app/',
     },
     {
       title: 'Pokedex',
       description: 'Buscador de pokemons desarrollado en React',
       items: ['JavaScript', 'React', 'Bootstrap', 'PokeAPI'],
       image: { src: '/images/pokedex.png', alt: 'Pokedex' },
+      href: 'https://pokedexbylei.netlify.app/',
     },
     {
       title: 'MovieDB',
@@ -23,12 +25,14 @@ const ProjectsSection = (): React.JSX.Element => {
         'Buscador de peliculas en VueJs. Listados por género, populares y similares.',
       items: ['JavaScript', 'Vue', 'Bootstrap', 'The MovieDB API'],
       image: { src: '/images/moviedb.png', alt: 'MovieDB' },
+      href: 'https://themoviesdb.netlify.app/',
     },
     {
       title: 'Bityuya',
       description: 'Cotizador de criptomonedas (en desarrollo)',
       items: ['JavaScript', 'React', 'Bootstrap', 'CryptoCompare API'],
       image: { src: '/images/bityuya.png', alt: 'Bityuya' },
+      href: 'https://bityuya.netlify.app/',
     },
   ];
   return (
