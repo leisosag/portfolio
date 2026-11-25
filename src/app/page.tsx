@@ -4,17 +4,18 @@ import WorkSection from '@/components/sections/WorkSection';
 import ContactLinks from '@/components/ui/ContactLinks';
 import { Navbar } from '@/components/ui/Navbar';
 import ThemeToggle from '@/components/ui/ThemeToggle';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
     <>
       <a className="skip-link" href="#main-content">Skip to content</a>
-      <div className="portfolio-layout">
+      <div className={`portfolio-layout ${styles.layout}`}>
         <header className="sidebar">
-          <div>
-            <h1>Leila Sosa Gonzalez</h1>
+          <div className={styles.sidebarIntro}>
+            <h1 className={styles.name}>Leila Sosa Gonzalez</h1>
             <p className="role">Frontend Engineer</p>
-            <p className="intro">
+            <p className={`intro ${styles.bio}`}>
               I build design systems and complex product interfaces with React
               and TypeScript.
             </p>

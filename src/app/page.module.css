@@ -1,0 +1,22 @@
+@media (width < 57rem) {
+  .sidebarIntro {
+    align-self: stretch;
+    min-width: 0;
+  }
+
+  .sidebarIntro .name {
+    max-width: none;
+    font-size: clamp(3.4rem, 17vw, 5.25rem);
+    overflow-wrap: anywhere;
+  }
+
+  .sidebarIntro .bio {
+    max-width: 46ch;
+  }
+}
+
+@media (width <= 25rem) {
+  .layout {
+    --gutter: 1rem;
+  }
+}

@@ -1,5 +1,7 @@
 'use client';
 
+import { faMoon } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useSyncExternalStore } from 'react';
 
 const themeChange = 'portfolio-theme-change';
@@ -33,9 +35,16 @@ export default function ThemeToggle() {
   }
 
   return (
-    <button className="theme-toggle" type="button" aria-pressed={isDark} onClick={toggleTheme}>
-      <span className="theme-icon" aria-hidden="true" />
-      Dark mode
+    <button
+      className="theme-toggle"
+      type="button"
+      aria-label="Dark mode"
+      aria-pressed={isDark}
+      title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+      onClick={toggleTheme}
+    >
+      <span className="theme-sun" aria-hidden="true" />
+      <FontAwesomeIcon className="theme-moon" icon={faMoon} aria-hidden="true" />
     </button>
   );
 }
