@@ -5,17 +5,37 @@ const projects = [
     title: 'Design System & Investment Funds Platform',
     summary:
       'I evolved a shared React component library and built interfaces for an investment funds platform.',
-    technologies: ['React', 'TypeScript', 'Storybook', 'TanStack Table'],
+    technologies: [
+      'React',
+      'TypeScript',
+      'Storybook',
+      'TanStack Table',
+      'TanStack Query',
+      'Tailwind CSS',
+      'Radix UI',
+      'Zustand',
+      'Pendo',
+    ],
     details: [
       {
-        title: 'Component library',
+        title: 'Design system ownership',
         description:
-          'I worked with UX to refactor existing components and build new ones, documented their usage in Storybook, and wrote migration guides to help other developers adopt updates.',
+          'I was responsible for the evolution and maintenance of a shared React component library that grew to 71 reusable components and was adopted across multiple projects. I collaborated directly with UX to refine existing components and build new ones.',
+      },
+      {
+        title: 'Documentation & adoption',
+        description:
+          'I documented components in Storybook, wrote migration guides, and supported developers integrating the library into their applications.',
       },
       {
         title: 'Investment platform',
         description:
-          'I built interfaces for the platform from scratch and used TanStack Table to support dynamic filters, sorting, pagination, and configurable columns.',
+          'I built module interfaces from scratch, including advanced data tables with dynamic filters, sorting, pagination, column reordering, and visibility settings.',
+      },
+      {
+        title: 'Product analytics',
+        description:
+          'I integrated Pendo tracking to capture user interactions across the platform and its data tables.',
       },
     ],
   },
@@ -23,17 +43,29 @@ const projects = [
     title: 'Workforce Management Platform',
     summary:
       'I extended a React app for a US client, working across the frontend and its AWS integrations.',
-    technologies: ['React', 'TypeScript', 'AWS Amplify', 'AWS Lambda'],
+    technologies: [
+      'React',
+      'TypeScript',
+      'AWS Amplify Gen 2',
+      'Lambda',
+      'DynamoDB',
+      'S3',
+    ],
     details: [
       {
-        title: 'AWS integrations',
+        title: 'Application development',
         description:
-          'I built Lambda functions for email and scheduled tasks and implemented PDF generation.',
+          'I maintained and extended an existing React application for workforce management, contributing new features and resolving issues across the frontend and its cloud integrations.',
       },
       {
-        title: 'Client collaboration',
+        title: 'AWS & serverless integrations',
         description:
-          'I took part in planning and progress meetings conducted entirely in English.',
+          'I worked with AWS Amplify Gen 2, DynamoDB, and S3, developed Lambda functions for email notifications and scheduled tasks, and implemented PDF generation.',
+      },
+      {
+        title: 'International collaboration',
+        description:
+          'I participated in regular planning and progress meetings conducted entirely in English, collaborating with the development team on requirements and implementation.',
       },
     ],
   },
@@ -41,17 +73,29 @@ const projects = [
     title: 'Real-time Logistics Platform',
     summary:
       'I owned the frontend architecture and built a web app for managing deliveries and tracking vehicles.',
-    technologies: ['Angular', 'Ionic', 'Google Maps API', 'WebSockets'],
+    technologies: [
+      'Angular',
+      'TypeScript',
+      'Ionic',
+      'RxJS',
+      'Google Maps API',
+      'WebSockets',
+    ],
     details: [
+      {
+        title: 'Frontend architecture',
+        description:
+          'As the sole frontend developer, I defined the technology stack, application structure, and frontend architecture, building the platform from scratch in collaboration with a backend developer.',
+      },
       {
         title: 'Role-based workflows',
         description:
-          'As the sole frontend developer, I built interfaces from scratch for administrators, drivers, and customers. I implemented a mobile-first web experience with dedicated desktop views for administrators.',
+          'I developed dedicated interfaces for administrators, drivers, and customers, supporting order management, delivery workflows, and shipment tracking through a mobile-first web experience.',
       },
       {
-        title: 'Live vehicle tracking',
+        title: 'Real-time vehicle tracking',
         description:
-          'I integrated Google Maps with WebSocket updates so users could track vehicles in real time.',
+          'I integrated Google Maps with WebSocket updates to display live vehicle locations and enable customers to track their deliveries in real time.',
       },
     ],
   },
@@ -59,17 +103,33 @@ const projects = [
     title: 'Banking Onboarding & Compliance',
     summary:
       'I helped bring an email-based compliance process into a banking onboarding platform.',
-    technologies: ['Vue 2', 'Microfrontends'],
+    technologies: [
+      'Vue 2',
+      'JavaScript',
+      'Vuex',
+      'Bootstrap',
+      'Microfrontends',
+    ],
     details: [
       {
-        title: 'Document review',
+        title: 'Business process digitalization',
         description:
-          'I worked with business users, UX, and backend developers to bring PDF review, section comments, and notifications into the platform.',
+          'I helped transform a previously manual, email-based compliance process into an integrated digital workflow within an existing banking onboarding platform.',
       },
       {
-        title: 'Microfrontend delivery',
+        title: 'Requirements & collaboration',
         description:
-          'I was responsible for the frontend and coordinated one developer in a microfrontend setup with a shared component library and independent deployments.',
+          'I worked directly with compliance users, UX designers, and backend developers to understand requirements, evaluate technical feasibility, and implement document review, section-level comments, and notifications.',
+      },
+      {
+        title: 'Microfrontend architecture',
+        description:
+          'I worked within a microfrontend architecture with independent repositories and deployments, supported by a shared component library.',
+      },
+      {
+        title: 'Frontend ownership',
+        description:
+          'I took responsibility for frontend development, coordinated another developer, and participated in production deployments and maintenance activities.',
       },
     ],
   },
@@ -86,7 +146,9 @@ export default function WorkSection() {
                 <h3>{title}</h3>
                 <p className="project-summary">{summary}</p>
                 <ul className="technology-list" aria-label="Technologies">
-                  {technologies.map((technology) => <li key={technology}>{technology}</li>)}
+                  {technologies.map((technology) => (
+                    <li key={technology}>{technology}</li>
+                  ))}
                 </ul>
               </div>
               <details className="project-details">
