@@ -1,40 +1,35 @@
-'use client';
-import * as React from 'react';
-import { useNavigationStore } from './stores/navigationStore';
-import { SECTIONS } from './constants/navigation';
 import AboutSection from '@/components/sections/AboutSection';
 import ExperienceSection from '@/components/sections/ExperienceSection';
-import ProjectsSection from '@/components/sections/ProjectsSection';
+import WorkSection from '@/components/sections/WorkSection';
+import ContactLinks from '@/components/ui/ContactLinks';
+import { Navbar } from '@/components/ui/Navbar';
+import ThemeToggle from '@/components/ui/ThemeToggle';
 
 export default function Home() {
-  const { setActive } = useNavigationStore();
-
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(entry.target.id);
-          }
-        });
-      },
-
-      { threshold: 0.6 }
-    );
-
-    SECTIONS.forEach((s) => {
-      const section = document.getElementById(s.label.toLowerCase());
-      if (section) observer.observe(section);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <>
-      <AboutSection />
-      <ExperienceSection />
-      <ProjectsSection />
+      <a className="skip-link" href="#main-content">Skip to content</a>
+      <div className="portfolio-layout">
+        <header className="sidebar">
+          <div>
+            <h1>Leila Sosa Gonzalez</h1>
+            <p className="role">Frontend Engineer</p>
+            <p className="intro">
+              I build design systems and complex product interfaces with React
+              and TypeScript.
+            </p>
+            <Navbar />
+            <ContactLinks />
+          </div>
+          <ThemeToggle />
+        </header>
+
+        <main id="main-content" tabIndex={-1}>
+          <WorkSection />
+          <ExperienceSection />
+          <AboutSection />
+        </main>
+      </div>
     </>
   );
 }

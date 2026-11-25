@@ -1,19 +1,18 @@
-import * as React from 'react';
+import type { ReactNode } from 'react';
 
 interface SectionProps {
   sectionId: string;
-  children?: React.ReactNode;
+  title: string;
+  children: ReactNode;
 }
 
-const Section = ({ sectionId, children }: SectionProps): React.JSX.Element => {
+export default function Section({ sectionId, title, children }: SectionProps) {
+  const headingId = `${sectionId}-heading`;
+
   return (
-    <section
-      id={sectionId}
-      className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-30 px-6"
-    >
+    <section className="content-section" id={sectionId} aria-labelledby={headingId}>
+      <h2 id={headingId}>{title}</h2>
       {children}
     </section>
   );
-};
-
-export default Section;
+}
