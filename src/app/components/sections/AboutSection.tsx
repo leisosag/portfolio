@@ -1,32 +1,35 @@
-import * as React from 'react';
 import Section from '@/components/ui/Section';
 
-const AboutSection = (): React.JSX.Element => {
+export default function AboutSection() {
   return (
-    <Section sectionId="about">
-      <div className="max-w-4xl py-16">
-        <h1 className="text-4xl font-bold tracking-tight text-slate-200">
-          Hi, I'm Leila
-        </h1>
-
-        <p className="mt-4 leading-normal">
-          I'm a frontend developer with 5+ years of experience,
+    <Section sectionId="about" title="About">
+      <div className="about-copy">
+        <p>
+          I’m a frontend engineer with over five years of professional
+          experience, specializing in React and TypeScript. I’ve built and
+          maintained web applications in finance, banking, and logistics, and
+          have also worked with Vue and Angular.
         </p>
-
-        <p className="mt-1 leading-normal">
-          focused on building clean, structured, and maintainable interfaces.
+        <p>
+          I’ve built applications from scratch and evolved existing products.
+          My work has included making frontend architecture decisions, working
+          with microfrontends, and helping teams use shared design systems
+          through reusable components, technical documentation, and migration
+          guides.
         </p>
-
-        <p className="mt-4 leading-normal">
-          I care deeply about clarity — in code, design, and collaboration.
+        <p>
+          I collaborate directly with UX designers, backend developers, and
+          business users to understand requirements and shape solutions. I’ve
+          coordinated frontend work, supported other developers, and worked
+          with international teams in English (C1).
         </p>
-
-        <p className="mt-1 leading-normal">
-          I enjoy working on products where details matter.
+        <p>
+          I hold a degree in Architecture from the University of Buenos Aires.
+          That background influences how I think about visual hierarchy and how
+          components fit together. I care about making interfaces clear to use
+          and the code behind them easy to maintain.
         </p>
       </div>
     </Section>
   );
-};
-
-export default AboutSection;
+}
